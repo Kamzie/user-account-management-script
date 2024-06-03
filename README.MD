@@ -1,6 +1,8 @@
 # User Account Management Script
 
-This Bash script is designed to manage user accounts on a Unix-like system. It offers functionality to disable user accounts by default, with additional options to delete user accounts or their home directories, and to archive home directories.
+The purpose of this script is to assist in managing user accounts created during my Linux administration learning process. Often, when deleting user accounts like "bat-man", "catwoman", and "Ken masters", I inadvertently left behind redundant home directories.
+
+To streamline user account management, this script offers functionality to disable user accounts by default. Additionally, it provides options to delete user accounts or their home directories, and to archive home directories.
 
 ## Features
 
