@@ -14,29 +14,40 @@ This Bash script is designed to manage user accounts on a Unix-like system. It p
 
 - Unix-like operating system.
 - Bash shell.
+- Edit the script to set your default archive save directory by modifying the `ARCHIVE_DIR` variable.
 
 ## Usage
 
-<pre>
-<code>
-./user_account_management.sh [-adr] USER [USER...]
-</code>
-</pre>
+1. Make the script executable:
 
-- `-a`: Archive user account.
-- `-d`: Delete user account.
-- `-r`: Delete user home directory.
-- `USER`: User account name to manage.
+   <pre>
+   <code>
+   chmod +x user_account_management.sh
+   </code>
+   </pre>
 
-Example:
+2. Run the script with the desired options:
 
-<pre>
-<code>
-./user_account_management.sh -d -r john
-</code>
-</pre>
+   <pre>
+   <code>
+   ./user_account_management.sh [-adr] USER [USER...]
+   </code>
+   </pre>
 
-This command will delete the user account `john` and its associated home directory.
+   - `-a`: Archive user account.
+   - `-d`: Delete user account.
+   - `-r`: Delete user home directory.
+   - `USER`: User account name to manage.
+
+   Example:
+
+   <pre>
+   <code>
+   ./user_account_management.sh -d -r john
+   </code>
+   </pre>
+
+   This command will delete the user account `john` and its associated home directory.
 
 ## Options
 
