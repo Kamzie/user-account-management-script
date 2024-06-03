@@ -31,7 +31,7 @@ If no option is provided, the default action is to disable the user account. Thi
 1. **Make the script executable:**
 
    ```bash
-   chmod +x user_account_management.sh
+   chmod +x 04_user_account_management.sh
 
    ```
 
@@ -39,7 +39,7 @@ If no option is provided, the default action is to disable the user account. Thi
 
    <pre>
    <code>
-   ./user_account_management.sh [-adr] USER [USER...]
+   ./04_user_account_management.sh [-adr] USER [USER...]
    </code>
    </pre>
 
@@ -52,7 +52,7 @@ If no option is provided, the default action is to disable the user account. Thi
 
    <pre>
    <code>
-   ./user_account_management.sh -d -r john
+   ./04_user_account_management.sh -d -r john
    </code>
    </pre>
 
@@ -70,7 +70,7 @@ You can manage multiple users at once by specifying their usernames separated by
 
    <pre>
    <code>
-   ./user_account_management.sh -a -d -r john jane doe
+   ./04_user_account_management.sh -a -d -r john jane doe
    </code>
    </pre>
 
