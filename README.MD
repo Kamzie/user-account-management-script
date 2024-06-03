@@ -1,6 +1,6 @@
-## User Account Management Script
+# User Account Management Script
 
-This Bash script is designed to manage user accounts on a Unix-like system. It provides functionality to disable user accounts and perform additional actions such as archiving user directories and deleting user accounts and their associated home directories.
+This Bash script is designed to manage user accounts on a Unix-like system. It offers functionality to disable user accounts by default, with additional options to delete user accounts or their home directories, and to archive home directories.
 
 ## Features
 
@@ -10,21 +10,23 @@ This Bash script is designed to manage user accounts on a Unix-like system. It p
   - `-d`: Delete user account.
   - `-r`: Delete user home directory.
 
+## Default Archive Directory
+
+By default, the script archives user home directories to `/vagrant/archive`. You can modify this directory by editing the `ARCHIVE_DIR` variable in the script.
+
 ## Prerequisites
 
 - Unix-like operating system.
 - Bash shell.
-- Edit the script to set your default archive save directory by modifying the `ARCHIVE_DIR` variable.
 
 ## Usage
 
-1. Make the script executable:
+1. **Make the script executable:**
 
-   <pre>
-   <code>
+   ```bash
    chmod +x user_account_management.sh
-   </code>
-   </pre>
+
+   ```
 
 2. Run the script with the desired options:
 
@@ -59,11 +61,11 @@ This Bash script is designed to manage user accounts on a Unix-like system. It p
 
 You can manage multiple users at once by specifying their usernames separated by spaces. For example, to archive, delete, and remove the home directories of multiple users `john`, `jane`, and `doe`, you would use:
 
-<pre>
-<code>
-./user_account_management.sh -a -d -r john jane doe
-</code>
-</pre>
+   <pre>
+   <code>
+   ./user_account_management.sh -a -d -r john jane doe
+   </code>
+   </pre>
 
 This command will:
 
