@@ -4,8 +4,8 @@
 
 # The following options are available for the user account: -d to delete the acount, -r to delete the home directory, -a to archive the home directory.
 
-# Default Archive directory
-ARCHIVE_DIR='/vagrant/archive'
+# Default Archive Directory
+ARCHIVE_DIR="/vagrant/archive"
 
 # Check for root privilege
 if [[ "${UID}" -ne 0 ]]; then
