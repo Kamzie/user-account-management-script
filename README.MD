@@ -14,10 +14,17 @@ This Bash script is designed to manage user accounts on a Unix-like system. It o
 
 By default, the script archives user home directories to `/vagrant/archive`. You can modify this directory by editing the `ARCHIVE_DIR` variable in the script.
 
+If no option is provided, the default action is to disable the user account. This means that if no `-a`, `-d`, or `-r` option is specified, the script will disable the user account(s) provided as arguments.
+
 ## Prerequisites
 
 - Unix-like operating system.
 - Bash shell.
+
+## Error Handling
+
+- The script checks for root privileges. If run without root privileges, it displays an error message and exits.
+- If no options are provided or if insufficient arguments are passed, the script displays usage instructions and exits.
 
 ## Usage
 
@@ -73,11 +80,15 @@ This command will:
 - Delete the user accounts `john`, `jane`, and `doe`.
 - Remove the home directories of `john`, `jane`, and `doe`.
 
+## Final Prompts
+
+After executing each option, the script provides final prompts indicating the completion of the action. For example:
+
+- If an account is disabled: "Account for 'USER' has been disabled."
+- If a user account is deleted: "User account 'USER' was deleted."
+- If a home directory is deleted: "Home directory for user 'USER' was deleted."
+
 ## Notes
 
 - Root privileges are required to run this script.
 - User accounts with a UID below 1000 will be skipped, as they are typically system accounts.
-
-## License
-
-This script is licensed under the [MIT License](LICENSE).
