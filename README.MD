@@ -18,11 +18,6 @@ By default, the script archives user home directories to `/vagrant/archive`. You
 
 If no option is provided, the default action is to disable the user account. This means that if no `-a`, `-d`, or `-r` option is specified, the script will disable the user account(s) provided as arguments.
 
-## Prerequisites
-
-- Unix-like operating system.
-- Bash shell.
-
 ## Error Handling
 
 - The script checks for root privileges. If run without root privileges, it displays an error message and exits.
