@@ -55,6 +55,8 @@ If no option is provided, the default action is to disable the user account. Thi
 
    This command will delete the user account `john` and its associated home directory.
 
+   ![Screenshot of terminal once 04_user_account_management.sh deleting the account john](./user_account_01.png)
+
 ## Options
 
 - `-a`: Archive the user's home directory before performing any other action.
@@ -76,6 +78,8 @@ This command will:
 - Archive the home directories of `john`, `jane`, and `doe`.
 - Delete the user accounts `john`, `jane`, and `doe`.
 - Remove the home directories of `john`, `jane`, and `doe`.
+
+  ![Screenshot of terminal once 04_user_account_management.sh, archiving and deleting the accounts john, jane and doe](./user_account_02.png)
 
 ## Final Prompts
 
