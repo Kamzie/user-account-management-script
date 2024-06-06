@@ -2,7 +2,7 @@
 
 # This script takes in one or more user account names and disable the accounts as a default feature.
 
-# The following options are available for the user account: -d to delete the acount, -r to delete the home directory, -a to archive the home directory.
+# The following options are available for the user account: -a to archive the home directory, -d to delete the acount, -r to delete the home directory.
 
 # Default Archive Directory
 ARCHIVE_DIR="/vagrant/archive"
