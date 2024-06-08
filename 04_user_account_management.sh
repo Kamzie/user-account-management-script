@@ -14,26 +14,26 @@ if [[ "${UID}" -ne 0 ]]; then
 fi
 
 usage() {
-
-	cat << EOF
+	  cat << EOF
 Usage: ${0} [-adr] USER [USER...]
 
 Options:
-  -a    Optional:	Archive user account.
-  -d    Optional:	Delete user account.
-  -r    Optional:	Delete user home directory.	
-  USER  Required:	User account.
+  -a    Optional: Archive user account.
+  -d    Optional: Delete user account.
+  -r    Optional: Delete user home directory.
+  USER  Required: User account(s).
 
 Examples:
-  ${0}  user
-  ${0}  -a user
-  ${0}  -adr user1 user2 user3
+  ${0} user
+  ${0} -a user
+  ${0} -adr user1 user2 user3
 
 Notes:
-  - USER is required and if no other options are specified, the account will be disabled.
-  - adr are optional.
+  - USER is required. If no options are specified, the account will be disabled.
+  - Options -a, -d, and -r are optional and can be combined.
 EOF
-  exit 1
+  
+	exit 1
 }
 
 # Initailising variables
