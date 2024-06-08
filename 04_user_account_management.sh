@@ -15,6 +15,7 @@ fi
 
 usage() {
 	  cat << EOF
+
 Usage: ${0} [-adr] USER [USER...]
 
 Options:
@@ -31,8 +32,8 @@ Examples:
 Notes:
   - USER is required. If no options are specified, the account will be disabled.
   - Options -a, -d, and -r are optional and can be combined.
-EOF
-  
+
+EOF 
 	exit 1
 }
 
