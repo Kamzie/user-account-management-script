@@ -14,11 +14,24 @@ if [[ "${UID}" -ne 0 ]]; then
 fi
 
 usage() {
-  echo "Usage: ${0} [-adr] USER [USER...]" >&2
-  echo "-a	Archive user account"
-  echo "-d	Delete user account"
-  echo "-r	Delete user home directory"
-  echo "USER	user account name to disable."
+	cat << EOF
+Usage: ${0} [-adr] USER [USER...]
+
+Options:
+	-a	Optional:		Archive user account.
+	-d	Optional:		Delete user account.
+	-r	Optional:		Delete user home directory.	
+	USER	Required:		User account.
+
+Examples:
+	${0} 	USER
+	${0} 	-a USER 
+	${0} 	-adr USER1 USER2 USER3
+
+Notes:
+	- USER is required and if no other options are specified, the account will be disabled.
+	- The -adr are optional.
+EOF
   exit 1
 }
 
