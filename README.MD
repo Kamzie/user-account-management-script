@@ -28,7 +28,7 @@ If no option is provided, the default action is to disable the user account. Thi
 1. **Make the script executable:**
 
    ```bash
-   chmod +x 04_user_account_management.sh
+   chmod +x user_account_management.sh
 
    ```
 
@@ -36,7 +36,7 @@ If no option is provided, the default action is to disable the user account. Thi
 
    <pre>
    <code>
-   ./04_user_account_management.sh [-adr] USER [USER...]
+   ./user_account_management.sh [-adr] USER [USER...]
    </code>
    </pre>
 
@@ -49,13 +49,13 @@ If no option is provided, the default action is to disable the user account. Thi
 
    <pre>
    <code>
-   ./04_user_account_management.sh -d -r john
+   ./user_account_management.sh -d -r john
    </code>
    </pre>
 
    This command will delete the user account `john` and its associated home directory.
 
-   ![Screenshot of terminal once 04_user_account_management.sh deleting the account john](./user_account_01.png)
+   ![Screenshot of terminal once user_account_management.sh deleting the account john](./user_account_01.png)
 
 ## Options
 
@@ -69,7 +69,7 @@ You can manage multiple users at once by specifying their usernames separated by
 
    <pre>
    <code>
-   ./04_user_account_management.sh -a -d -r john jane doe
+   ./user_account_management.sh -a -d -r john jane doe
    </code>
    </pre>
 
@@ -79,7 +79,7 @@ This command will:
 - Delete the user accounts `john`, `jane`, and `doe`.
 - Remove the home directories of `john`, `jane`, and `doe`.
 
-  ![Screenshot of terminal once 04_user_account_management.sh, archiving and deleting the accounts john, jane and doe](./user_account_02.png)
+  ![Screenshot of terminal once user_account_management.sh, archiving and deleting the accounts john, jane and doe](./user_account_02.png)
 
 ## Final Prompts
 
