@@ -1,8 +1,8 @@
 # User Account Management Script
 
-The purpose of this script is to assist in managing user accounts created during my Linux administration learning process. Often, when deleting user accounts like "Batman", "Catwoman", and "Mr Joker", I inadvertently left behind redundant home directories.
+The purpose of this script is to assist me in managing user accounts created during my Linux administration learning process. Often, when deleting user accounts like "Batman," "Catwoman," and "Mr. Joker," I realised that their home directories still existed, and there were entries in /etc/passwd and other locations.
 
-To streamline user account management, this script offers functionality to disable user accounts by default. Additionally, it provides options to archive home directories, delete user accounts, or their home directories.
+To streamline user account management, this script offers functionality to disable user accounts by default. Additionally, it provides options to archive home directories, delete user accounts, or delete their home directories.
 
 ## Features
 
